@@ -1,7 +1,7 @@
 # Data Project 2 IoT - Grupo 5
 
-- Luis Andreu Navarro
 - Thais Casares González
+- Jaime Torres Natividad
 - Álvaro Masa De Vega
 - Hermán Redondo Lázaro
-- Jaime Torres Natividad
+- Luis Andreu Navarro
