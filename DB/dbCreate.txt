@@ -1,0 +1,19 @@
+CREATE DATABASE LetsprayDB;
+use LetsprayDB;
+CREATE TABLE sensors (
+    sensorId int primary key not null,
+    latitude float,
+    longitude float,
+    constraint sensorId
+        unique (sensorId)
+);
+
+CREATE TABLE sensorsInput (
+    sensorsInputId int auto_increment primary key,
+    sensorId int,
+    soilHumidity tinyint,
+    relativeHumidity tinyint,
+    temperature float,
+    date datetime,
+    foreign key (sensorId) references sensors (sensorId)
+);
