@@ -1,2 +1,2 @@
-keyboard
-Faker
+mysql-connector-python
+google-cloud-pubsub
