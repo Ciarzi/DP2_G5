@@ -10,3 +10,7 @@
 1- Cloud SQL --> DB creada
 2- Cloud Function 
   trigger Pub/Sub con Cloud Scheduler cada 30 min
+  
+<p align="center">
+   <img src="https://github.com/Ciarzi/DP2_G5/blob/main/Imagenes/Logo%20DP2.png?raw=true" alt="[YOUR_ALT]"/>
+</p>
