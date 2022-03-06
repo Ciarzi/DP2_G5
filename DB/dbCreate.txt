@@ -1,6 +1,7 @@
 use LetsprayDB;
 CREATE TABLE sensors (
     sensorId int primary key not null,
+    userId int,
     latitude float,
     longitude float,
     constraint sensorId
@@ -14,6 +15,16 @@ CREATE TABLE sensorsInput (
     relativeHumidity tinyint,
     temperature float,
     date datetime,
+    foreign key (sensorId) references sensors (sensorId)
+);
+
+CREATE TABLE userSensorConfig (
+    sensorId int,
+    squareMeter float,
+    soilHumidity int,
+    grass varchar(50),
+    flowerPreference varchar(50),
+    timePreference varchar(75),
     foreign key (sensorId) references sensors (sensorId)
 );
 
