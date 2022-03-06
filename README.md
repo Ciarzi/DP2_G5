@@ -29,7 +29,9 @@ Pero nuestra misión no se detiene en las viviendas, el sensor también sirve pa
 # Tutorial paso a paso
 
 1- Dado que se trata de un proyecto basado en la nube, lo primero es elegir un servicio de Cloud. En nuestro caso, [Google Cloud Platform](https://cloud.google.com/ "Regístrate aquí")
+
 2- Una vez registrados crearemos un nuevo proyecto
+
 3- 
 
 
