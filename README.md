@@ -21,11 +21,19 @@ Pero nuestra misión no se detiene en las viviendas, el sensor también sirve pa
 - [Hermán Redondo Lázaro](https://github.com/Ciarzi "Hermán")
 - [Luis Andreu Navarro](https://github.com/Luisand8 "Luis")
 
+# Arquitectura
+<p align="center">
+   <img src="https://github.com/Ciarzi/DP2_G5/blob/main/Imagenes/Arquitectura.png" alt="[YOUR_ALT]"/>
+</p>
+
+# Tutorial paso a paso
+
+1- Dado que se trata de un proyecto basado en la nube, lo primero es elegir un servicio de Cloud. En nuestro caso, [Google Cloud Platform](https://cloud.google.com/ "Regístrate aquí")
+2- Una vez registrados crearemos un nuevo proyecto
+3- 
+
 
 
 1- Cloud SQL --> DB creada
 2- Cloud Function 
   trigger Pub/Sub con Cloud Scheduler cada 30 min
-
-
-
