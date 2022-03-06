@@ -7,7 +7,7 @@
 # ¿Qué es Letspray?
 Con la intención de ayudar al medioambiente, nace Letspray. Somos una start up que gracias a la tecnología IoT y a través de Cloud quiere frenar el malgasto de agua actual cuando se riega.
 
-Queremos ayudarte a ahorrar agua, tanto si tienes dos plantas en tu casa o la terraza llena de ellas. Para ello, proporcionamos un sensor que se coloca en la tierra y es capaz de enviar información, como la húmedad o la temperatura entre otros, y determinar qué cantidad de agua se necesita.
+Queremos ayudarte a ahorrar agua, tanto si tienes dos plantas en tu casa o todo un jardín. Para ello, proporcionamos un sensor que se coloca en la tierra y es capaz de enviar información, como la húmedad o la temperatura entre otros, y determinar qué cantidad de agua se necesita.
 
 Pero nuestra misión no se detiene en las viviendas, el sensor también sirve para las tierras de cultivo. Pues optimizar el agua que se gasta cosechando es de vital importancia debido a la extensión del terreno.
 
