@@ -30,33 +30,33 @@ Pero nuestra misión no se detiene en las viviendas, el sensor también sirve pa
 
 # Prerrequisitos
 
-1- Dado que se trata de un proyecto basado en la nube, lo primero es elegir un servicio de Cloud. En nuestro caso, [Google Cloud Platform](https://cloud.google.com/ "Regístrate aquí"), una vez registrados lo primero es [ir a la consola](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/1.png)
+1- Dado que se trata de un proyecto basado en la nube, lo primero es elegir un servicio de Cloud. En nuestro caso hemos escogido, [Google Cloud Platform](https://cloud.google.com/ "Regístrate aquí"). Una vez registrados, lo primero es [ir a la consola](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/1.png)
 
 # SQL
 
-2- Ya una vez dentro de GCP lo primero será [acceder a SQL](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/2.jpeg)
+2- Ya una vez dentro de GCP, lo primero será [acceder a SQL](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/2.jpeg)
 
 3- De las opciones que aparecen hay que seleccionar [MySQL](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/3.jpeg) (en caso de no tener activada la API de Compute Engine [te pedirá que la actives](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/4.jpeg))
 
-4- Lo siguiente es llenar los datos de configuración que se solicitan y seleccionar [Create instance](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/5.jpeg)
+4- Lo siguiente es llenar los datos de configuración que se solicitan y seleccionar ["Create instance"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/5.jpeg)
 
-5- Una vez se crea la instancia el siguiente paso es seleccionar la opción [Databases](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/6.jpeg)
+5- Una vez se crea la instancia el siguiente paso es seleccionar la opción ["Databases"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/6.jpeg)
    
    5.1- Es posible que haya que esperar a que se [actualice](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/7.jpeg)
 
-6- Una vez se pueda seleccionar ["Create Database"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/8.jpeg) le damos, seleccionamos un nombre para la base de datos y seleccionamos [Create](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/9.jpeg)
+6- Una vez se pueda seleccionar ["Create Database"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/8.jpeg) le damos, seleccionamos un nombre para la base de datos y seleccionamos ["Create"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/9.jpeg)
 
 Con esto ya tenemos nuestra instancia de BD lista y funcionando.
 
 # Cloud Scheduler
 
-7- El siguiente paso es escribir en la barra de búsqueda [Cloud Scheduler](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/10.jpeg) y una vez seleccionado darle a [Create job](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/11.jpeg)
+7- El siguiente paso es escribir en la barra de búsqueda [Cloud Scheduler](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/10.jpeg) y una vez seleccionado darle a ["Create job"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/11.jpeg)
 
-8- Aquí toca llenar la [información que se solicitada](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/12.jpeg). Dado que nuestro sensor está pensado para enviar información cada 30 minutos, nosotros hemos escrito [(*/30 * * * *)](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/13.jpeg)
+8- Aquí toca llenar la [información que se solicita](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/12.jpeg). Dado que nuestro sensor está pensado para enviar información cada 30 minutos, nosotros hemos escrito [(*/30 * * * *)](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/13.jpeg)
             
     */30 * * * *
 
-9- En el apartado de "Configure the execution", en donde pone:
+9- En el apartado de "Configure the execution" hay que rellenar los datos de la siguiente manera, en donde pone:
 
    - Target type, seleccionaremos ["Pub/Sub"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/14.jpeg)
       
@@ -66,7 +66,9 @@ Con esto ya tenemos nuestra instancia de BD lista y funcionando.
         
     {"message":"hello"}
    
-10- Hecho todo lo anterior, [le damos a "Create"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/18.jpeg) y ya queda creado el Job en el Cloud Schedule que se ejecutará [cada 30 minutos](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/19.jpeg)
+10- Hecho todo lo anterior, [le damos a "Create"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/18.jpeg)
+
+Con esto ya queda creado el Job en el Cloud Schedule que se ejecutará [cada 30 minutos](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/19.jpeg)
 
 
 
