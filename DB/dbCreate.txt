@@ -28,6 +28,18 @@ CREATE TABLE userSensorConfig (
     foreign key (sensorId) references sensors (sensorId)
 );
 
+DELIMITER //
+
+CREATE PROCEDURE InsertUpdateSensorConfig (sensorid1 int, squareMeter1 FLOAT, soilHumidity1 int, grass1 varchar(50), flowerPreference1 varchar(50), timePreference1 varchar(75))
+  BEGIN
+    IF (select count(*) from lestsprayDb.userSensorConfig where sensorId = sensorid1 > 0) THEN UPDATE lestsprayDb.userSensorConfig SET squareMeter=squareMeter1, soilHumidity=soilHumidity1, grass=grass1, flowerPreference=flowerPreference1, timePreference=timePreference1  WHERE sensorId = sensorid1;
+    ELSE
+    INSERT INTO lestsprayDb.userSensorConfig (sensorId, squareMeter, soilHumidity, grass, flowerPreference, timePreference) VALUES (sensorid1, squareMeter1, soilHumidity1, grass1, flowerPreference1,timePreference1);
+    END IF;
+  END //
+
+DELIMITER ;
+
 INSERT INTO sensors (sensorId, latitude, longitude) VALUES (1, 39.4873, -0.32247);
 INSERT INTO sensors (sensorId, latitude, longitude) VALUES (2, 39.4892, -0.314196);
 INSERT INTO sensors (sensorId, latitude, longitude) VALUES (3, 39.4911, -0.340578);
