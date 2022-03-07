@@ -23,7 +23,7 @@ Pero nuestra misión no se detiene en las viviendas, el sensor también sirve pa
 
 # Arquitectura
 <p align="center">
-   <img src="https://github.com/Ciarzi/DP2_G5/blob/main/Imagenes/Arquitectura.png" alt="[YOUR_ALT]"/>
+   <img src="https://github.com/Ciarzi/DP2_G5/blob/main/Arq-diag_LetSpray.png" alt="[YOUR_ALT]"/>
 </p>
 
 # Cómo llevar a cabo el Data Project paso a paso
