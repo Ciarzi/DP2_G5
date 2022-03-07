@@ -30,9 +30,18 @@ Pero nuestra misión no se detiene en las viviendas, el sensor también sirve pa
 
 1- Dado que se trata de un proyecto basado en la nube, lo primero es elegir un servicio de Cloud. En nuestro caso, [Google Cloud Platform](https://cloud.google.com/ "Regístrate aquí")
 
-2- Una vez registrados [crearemos un nuevo proyecto](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/2.png) y [le daremos nombre](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/3.png)
+2- Una vez registrados lo primero es [ir a la consola](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/1.png) y [acceder a SQL](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/2.png)
 
-3- 
+3- De las opciones que aparecen hay que seleccionar [MySQL](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/3.png) [(en caso de no tener activada la API de Compute Engine te pedirá que la actives)](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/4.png)
+
+4- Lo siguiente es llenar los datos de configuración que se solicitan y seleccionar [Create instance](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/5.png)
+
+5- Una vez  la instancia está creada el siguiente paso es seleccionar la opción [Databases](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/6.png)
+   
+   5.1- Es posible que haya que esperar a que se [actualice](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/7.png)
+
+6- Una vez se pueda seleccionar [Create Database](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/8.png) le damos, seleccionamos un nombre para la base de datos y seleccionamos [Create](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/9.png)
+
 
 
 
