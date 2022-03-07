@@ -1,0 +1,10 @@
+{
+  "name": "httpServer",
+  "description": "Simple http server",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "LetSpray",
+  "dependencies": {
+    "mysql": "2.18.1"
+  }
+}
