@@ -32,7 +32,7 @@ Pero nuestra misión no se detiene en las viviendas, el sensor también sirve pa
 
 2- Una vez registrados lo primero es [ir a la consola](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/1.png) y [acceder a SQL](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/2.jpeg)
 
-3- De las opciones que aparecen hay que seleccionar [MySQL](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/3.jpeg) [(en caso de no tener activada la API de Compute Engine te pedirá que la actives)](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/4.jpeg)
+3- De las opciones que aparecen hay que seleccionar [MySQL](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/3.jpeg) (en caso de no tener activada la API de Compute Engine [te pedirá que la actives](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/4.jpeg))
 
 4- Lo siguiente es llenar los datos de configuración que se solicitan y seleccionar [Create instance](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/5.jpeg)
 
