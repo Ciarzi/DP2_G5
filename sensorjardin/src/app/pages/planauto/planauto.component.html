@@ -1,0 +1,32 @@
+
+<input type="submit" class="fadeIn fourth" [routerLink]="['/costum']" value="Customize">
+<img id="icon" src="assets/Logo.png">
+
+<div class="container">
+    <div class="row">
+        <ng-container>
+            <div id="seco" class="card col-md-3">
+                <img src="assets/secado-rapido.png">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">Seco</h5>
+                <p><strong>Características:</strong> El tipo de regado para aquellas plantas que no requieren de un gran cantidad agua. 
+                     </p>
+                    <p><strong>Tiempo de regado:</strong> Hasta 15 minutos de riego activo. </p>
+                    <p><strong>Ejemplos de flores:</strong> Alelí, Hortensia, Cactus</p>
+                <button id="secobutton" class="btn btn-primary" (click)="elegir1()">Regado seco</button>
+            </div>
+        </ng-container>
+        <ng-container>
+          
+            <div id = "humedo" class="card col-md-3">
+               
+               <img id="imagen" src="assets/humedad.png" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;"> Humedad</h5>
+                <p><strong>Características:</strong> El tipo de regado ideal para las plantas que necesitan una cantidad de agua mayor.</p>
+                    <p><strong>Tiempo de regado:</strong> Hasta 30 minutos de riego activo. </p>
+                    <p><strong>Ejemplos de flores:</strong> Dalia, Begonia, Rosas</p>
+                <button id="secobutton" class="btn btn-primary" (click)="elegir()" >Regado abundante</button>
+            
+        </div>
+        </ng-container>
+        <button id="cancelar" class="btn btn-primary" (click)="cancelar()" >cancelar</button>
+</div>

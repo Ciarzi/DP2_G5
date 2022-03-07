@@ -1,0 +1,7 @@
+{
+    "/httpServer/*":{
+        "target":"https://europe-west1-sensorproject-342620.cloudfunctions.net",
+        "secure": false
+        
+    }
+}

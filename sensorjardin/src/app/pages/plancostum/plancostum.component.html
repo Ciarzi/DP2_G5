@@ -1,0 +1,105 @@
+<input type="submit" class="fadeIn fourth" [routerLink]="['/auto']" value="Automatic Plan">
+<img id="icon" src="assets/Logo.png">
+<div class="container">
+    <div class="row">
+        <ng-container>
+            <div  class="card col-md-3">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">Temperatura°C</h5>
+                <p *ngFor="let t of tiempo"><strong>{{t.temperature}}</strong></p>
+            </div>
+        </ng-container>
+        <ng-container>
+          
+            <div  class="card col-md-3">
+               
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;"> Humedad%</h5>
+                <p *ngFor="let t of tiempo"><strong>{{t.relativeHumidity}}%</strong></p>
+            
+        </div>
+        </ng-container>
+        <ng-container>
+          
+            <div  class="card col-md-3">
+               
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">Humedad suelo:</h5>
+                <p *ngFor="let t of tiempo"><strong>{{t.soilHumidity}}%</strong></p>
+            
+        </div>
+        </ng-container>
+        <ng-container>
+          
+            <div  class="card col-md-3">
+               
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">Fecha</h5>
+                <p *ngFor="let t of tiempo"><strong>{{t.date}}</strong></p>
+            
+        </div>
+        </ng-container>
+    </div>
+</div>
+<p style="position: absolute; top: 250px; left: 1020px;">últimos datos del sensor</p>
+
+
+
+<form id="formulariot" #userForm="ngForm"  (ngSubmit)="onSubmit()" novalidate>
+
+    
+    <div class="form-group">
+        <label> metros cuadrados de su jardín</label>
+        <input type="text" id= "metroscuad" required #metros_cuadrados= "ngModel" pattern="^\d{1,4}$" [class.is-invalid]="metros_cuadrados.invalid && metros_cuadrados.touched" class="form-control" name="metros_cuadrados" [(ngModel)]="userModel.metros_cuadrados">
+        <small class ="text-danger" [class.d-none]="metros_cuadrados.valid || metros_cuadrados.untouched">Metros cuadrados es obligatorio</small>
+    </div>
+    
+    <div class="form-group">
+        <label> ¿A que humedad % te gustaría que se regase de forma automática?</label>
+        <input type="text" id= "metroscuad" #humedad= "ngModel" pattern="^\d{1,2}$" [class.is-invalid]= "humedad.invalid && humedad.touched" class="form-control" name="humedad" [(ngModel)]="userModel.humedad">
+        <small>Valor obligatorio. Asegúrese de poner solo números</small>
+    </div>
+
+    <div class="form-group">
+        <label>Tipo de césped</label>
+        <div class="form-check" >
+            <input class="form-check-input" type="radio" name="cespedPreference" value="Cesped natural" [(ngModel)]="userModel.cespedPreference">
+            <label class="form-check-label">Césped Natural</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="cespedPreference" value="Cesped artificial" [(ngModel)]="userModel.cespedPreference">
+            <label class="form-check-label">Césped artificial</label>
+        </div>
+    </div>
+
+    
+    <div class="form-group">
+        <label>Tipo de flores</label>
+
+        <div class="form-check" >
+            <input class="form-check-input" type="radio" name="florPreference" value="flores secas" [(ngModel)]="userModel.florPreference">
+            <label class="form-check-label" >flores secas</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="florPreference" value="flores humedas" [(ngModel)]="userModel.florPreference">
+            <label class="form-check-label" >flores humedas</label>
+        </div>
+    </div>
+
+   
+    <div class="form-group">
+        <label>Tipo de regado</label>
+
+        <div class="form-check" >
+            <input class="form-check-input" type="radio" name="regadoPreference" value="Ecológico" [(ngModel)]="userModel.regadoPreference">
+            <label class="form-check-label" >Ecológico</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="regadoPreference" value="Medio" [(ngModel)]="userModel.regadoPreference">
+            <label class="form-check-label" >Medio</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="regadoPreference" value="Abundante" [(ngModel)]="userModel.regadoPreference">
+            <label class="form-check-label" >Abundante</label>
+        </div>
+    </div>
+    <button [disabled]="userForm.form.invalid"    id ="buttonform" class="btn btn-primary" type="submit">Guardar ajustes</button>
+
+</form>
+
