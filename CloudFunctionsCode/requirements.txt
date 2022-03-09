@@ -1,4 +1,2 @@
 mysql-connector-python
 google-cloud-pubsub
-
-mysql-connector-python
