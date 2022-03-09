@@ -121,7 +121,7 @@ Con esto ya queda creado el Job en el Cloud Schedule que se ejecutará [cada 30 
 
 30- Lo primero es escribir en la barra de búsqueda Cloud Function y seleccionar ["Create Function"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/21.png)
 
-31- Una vez en las opciones de creación, hay que ponerle un nombre a la función, en nuestro caso ["data_processing_function"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/22.png) (dado que ya está creado previamente, aparece un error diciendo que ya existe una función con ese nombre, se puede poner el nombre que se quiera)
+31- Una vez en las opciones de creación, hay que ponerle un nombre a la función, en nuestro caso ["data_processing_function"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/31.png) (dado que ya está creado previamente, aparece un error diciendo que ya existe una función con ese nombre, se puede poner el nombre que se quiera)
 
 32- A la hora de seleccionar la región nosotros hemos elegigo "europe-west1"
 
@@ -131,7 +131,7 @@ Con esto ya queda creado el Job en el Cloud Schedule que se ejecutará [cada 30 
 
 35- Presionamos "Next".
 
-36- Lo siguiente es escoger el lenguaje en donde pone ["Runtime"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/32.png), en nuestro caso Python 3.9. 
+36- Lo siguiente es escoger el lenguaje en donde pone ["Runtime"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/33.png), en nuestro caso Python 3.9. 
 
 37- Una vez seleccionado, a la izquierda aparecerán dos archivos, en el que pone "main.py" hay que copiar el código que se encuentra en la carpeta CloudFunctionsCode del repositorio, específicamente el que se encuentra en el archivo [data_processing_function.py](https://github.com/Ciarzi/DP2_G5/blob/main/CloudFunctionsCode/data_processing_function.py). 
 
