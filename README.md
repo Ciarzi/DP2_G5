@@ -78,11 +78,13 @@ Con esto ya queda creado el Job en el Cloud Schedule que se ejecutará [cada 30 
 
     0.0.0.0/0
 
-13- Antes de nada vamos a abrir el programa de MySQL Workbench que hemos descagado antes
+13- Además, hay que añadir la contraseña de la base de datos. Siguiendo en SQL nos vamos a ["Users" y en los tres puntos a la derecha de root añadimos la contraseña de "datapdb2"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/29.jpg)
 
-14- Una vez dentro, hay que clickar en el símbolo ["+"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/27.png) que aparece para añadir una base de datos SQL.
+14- Antes de nada vamos a abrir el programa de MySQL Workbench que hemos descagado antes
 
-15- Ya con el menú abierto hemos de introducir la IP del proyecto. Esta es independiente de cada proyecto, para saber cuál es hay que acceder a SQL y mirar la [dirección IP](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/26.png). Además, hemos de introducir el "Username" de root y en clickar en ["Store in Vault"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/28.jpeg) para introducir la contraseña relacionada con la base de datos, en nuestro caso es "datapdb2".
+15- Una vez dentro, hay que clickar en el símbolo ["+"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/27.png) que aparece para añadir una base de datos SQL.
+
+16- Ya con el menú abierto hemos de introducir la IP del proyecto. Esta es independiente de cada proyecto, para saber cuál es hay que acceder a SQL y mirar la [dirección IP](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/26.png). Además, hemos de introducir el "Username" de root y en clickar en ["Store in Vault"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/28.jpeg) para introducir la contraseña relacionada con la base de datos, en nuestro caso es "datapdb2".
 
 -----Falta terminar mysql workbench
 
