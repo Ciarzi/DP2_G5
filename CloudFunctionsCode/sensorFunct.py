@@ -17,9 +17,6 @@ sql_get_last_sensor_input = """SELECT sensorId,
     temperature,
     date FROM sensorsInput WHERE sensorId =%s ORDER BY sensorsInputId DESC LIMIT 1"""
 
-sql_insert_sensor_input = """INSERT INTO sensorsInput (sensorId, soilHumidity, relativeHumidity, temperature, date) VALUES (%s,%s,%s,%s,%s)"""
-
-
 def datagen(event, context):
     for i in range(1, SENSORS_TOTAL+1):
         sensor = {}
@@ -34,7 +31,6 @@ def datagen(event, context):
             sensor["temperature"] = round(random.uniform(-2, 40),1)
             sensor["date"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
         else:
-            print(records[0])
             sensor["soilHumidity"] = random.randint(
                 max(records[0][1]-10, 0), min(records[0][1]+10, 100))
             sensor["relativeHumidity"] = random.randint(max(
@@ -42,9 +38,6 @@ def datagen(event, context):
             sensor["temperature"] = round(random.uniform(
                 max(records[0][3]-5, -2), min(records[0][3]+5, 40)),1)
             sensor["date"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
-        #insert_tuple = (i,sensor["soilHumidity"],sensor["relativeHumidity"],sensor["temperature"],sensor["date"])
-        #cursor.execute(sql_insert_sensor_input, insert_tuple)
-        #connection.commit()
         publisher = pubsub_v1.PublisherClient()
         topic_name = 'projects/{project_id}/topics/{topic}'.format(
             project_id=os.getenv('SENSOR_PROJECT_ID'),
