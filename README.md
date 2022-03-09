@@ -84,36 +84,36 @@ Con esto ya queda creado el Job en el Cloud Schedule que se ejecutará [cada 30 
 
 15- Una vez dentro, hay que clickar en el símbolo ["+"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/27.png) que aparece para añadir una base de datos SQL.
 
-16- Ya con el menú abierto hemos de introducir la IP del proyecto. Esta es independiente de cada proyecto, para saber cuál es hay que acceder a SQL y mirar la [dirección IP](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/26.png). Además, hemos de introducir el "Username" de root y en clickar en ["Store in Vault"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/28.jpeg) para introducir la contraseña relacionada con la base de datos, en nuestro caso es "datapdb2".
+16- Ya con el menú abierto hemos de introducir la IP del proyecto. Esta es independiente de cada proyecto, para saber cuál es la de TÚ proyecto hay que acceder a SQL y mirar la [dirección IP](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/26.png). Además, hemos de introducir el "Username" de root y en clickar en ["Store in Vault"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/28.jpeg) para introducir la contraseña relacionada con la base de datos, en nuestro caso es "datapdb2", también hay que añadir un nombre, en nuestro caso "all".
 
------Falta terminar mysql workbench
+17- Una vez creada la conexión con SQL toca copiar el código que se encuentra en la carpeta CloudFunctionsCode del repositorio, específicamente el que se encuentra en el archivo [dbCreate.txt](https://github.com/Ciarzi/DP2_G5/blob/main/DB/dbCreate.txt). Destacar que en la primera línea de código, despues de ["use"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/30.png) has de escribir el nombre de TÚ base de datos.
 
-16- Para crear nuestra primera Cloud Function lo primero es escribir en la barra de búsqueda Cloud Function y seleccionar ["Create Function"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/21.png)
+18- Pasando ya por fin a GCP, para crear nuestra primera Cloud Function lo primero es escribir en la barra de búsqueda Cloud Function y seleccionar ["Create Function"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/21.png)
 
-17- Una vez en las opciones de creación, hay que ponerle un nombre a la función, en nuestro caso ["sensorFunct"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/22.png) (dado que ya está creado previamente, aparece un error diciendo que ya existe una función con ese nombre, se puede poner el nombre que se quiera)
+19- Una vez en las opciones de creación, hay que ponerle un nombre a la función, en nuestro caso ["sensorFunct"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/22.png) (dado que ya está creado previamente, aparece un error diciendo que ya existe una función con ese nombre, se puede poner el nombre que se quiera)
 
-18- A la hora de seleccionar la región nosotros hemos elegigo "europe-west1"
+20- A la hora de seleccionar la región nosotros hemos elegigo "europe-west1"
 
-19- En donde pone "Trigger", seleccionamos "Pub/Sub" y creamos un topic llamado (en nuestro caso) ["datagen_trigger"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/23.png) y le damos a "Save"
+21- En donde pone "Trigger", seleccionamos "Pub/Sub" y creamos un topic llamado (en nuestro caso) ["datagen_trigger"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/23.png) y le damos a "Save"
 
-20- Lo siguiente es ir a la parte de "Runtime, build, connections and security settings"
+22- Lo siguiente es ir a la parte de "Runtime, build, connections and security settings"
 
-21- Al final, donde pone "Runtime environment variables" hay que presionar ["ADD VARIABLE"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/24.jpg) y escribir en donde pone "Name" SENSOR_PROJECT_ID, y en donde pone "Value" el id del proyecto, en nuestro caso "letspray2"
+23- Al final, donde pone "Runtime environment variables" hay que presionar ["ADD VARIABLE"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/24.jpg) y escribir en donde pone "Name" SENSOR_PROJECT_ID, y en donde pone "Value" el id del proyecto, en nuestro caso "letspray2"
 
-22- Presionamos "Next".
+24- Presionamos "Next".
 
-23- Lo siguiente es escoger el lenguaje en donde pone ["Runtime"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/25.png), en nuestro caso Python 3.9. 
+25- Lo siguiente es escoger el lenguaje en donde pone ["Runtime"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/25.png), en nuestro caso Python 3.9. 
 
-24- Una vez seleccionado a la izquierda aparecerán dos archivos, en el que pone "main.py" hay que copiar el código que se encuentra en la carpeta CloudFunctionsCode del repositorio, específicamente el que se encuentra en el archivo [sensorFunct.py](https://github.com/Ciarzi/DP2_G5/blob/main/CloudFunctionsCode/sensorFunct.py). 
+26- Una vez seleccionado a la izquierda aparecerán dos archivos, en el que pone "main.py" hay que copiar el código que se encuentra en la carpeta CloudFunctionsCode del repositorio, específicamente el que se encuentra en el archivo [sensorFunct.py](https://github.com/Ciarzi/DP2_G5/blob/main/CloudFunctionsCode/sensorFunct.py). 
 
-24.1- CUIDADO, los datos son independientes de cada proyecto. En "host" tienes que escribir la dirección IP de TÚ, la misma que has debido usar en MySQL Workbench y en "database" el nombre de TÚ base de datos.
+27.1- CUIDADO, los datos son independientes de cada proyecto. En "host" tienes que escribir la dirección IP de TÚ, la misma que has debido usar en MySQL Workbench y en "database" el nombre de TÚ base de datos.
 
-25- En el archivo de requirements.txt hay que copiar el código que se encuentra en la carpeta CloudFunctionsCode del repositorio, específicamente el que se encuentra en el archivo [requirements.txt](https://github.com/Ciarzi/DP2_G5/blob/main/CloudFunctionsCode/requirements.txt)
+28- En el archivo de requirements.txt hay que copiar el código que se encuentra en la carpeta CloudFunctionsCode del repositorio, específicamente el que se encuentra en el archivo [requirements.txt](https://github.com/Ciarzi/DP2_G5/blob/main/CloudFunctionsCode/requirements.txt)
 
     mysql-connector-python                
     google-cloud-pubsub
     
-26- Click en Deploy.
+29- Click en Deploy.
 
 ¡Ya tenemos lista la primera Cloud Function de nuestro proyecto!
 
