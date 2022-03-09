@@ -143,4 +143,5 @@ Con esto ya queda creado el Job en el Cloud Schedule que se ejecutará [cada 30 
     google-cloud-pubsub
     
 39- Click en Deploy.
+
 ¡Ya tenemos lista la segunda Cloud Function de nuestro proyecto!
