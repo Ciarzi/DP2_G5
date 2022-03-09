@@ -145,3 +145,11 @@ Con esto ya queda creado el Job en el Cloud Schedule que se ejecutará [cada 30 
 39- Click en Deploy.
 
 ¡Ya tenemos lista la segunda Cloud Function de nuestro proyecto!
+
+# ¿Cómo ver los datos?
+
+40- Por último, para ver los datos recopilados tenemos que ir a MySQL Workbench. En la conexión creada anteriormente, tras haber ejecutado el código que hemos pegado antes, escribimos la [siguiente línea de código](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/34.png) y la ejecutamos, esto nos mostrará en pantalla los datos: 
+
+    select * from letspraydb.sensorsInput
+
+Con esto, queda por finalizado el segundo Data Project :)
