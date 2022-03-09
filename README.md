@@ -44,7 +44,7 @@ Pero nuestra misión no se detiene en las viviendas, el sensor también sirve pa
 
 6- Una vez se crea la instancia el siguiente paso es seleccionar la opción ["Databases"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/6.jpeg)
    
-   5.1- Es posible que haya que esperar a que se [actualice](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/7.jpeg)
+   6.1- Es posible que haya que esperar a que se [actualice](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/7.jpeg)
 
 7- Una vez se pueda seleccionar ["Create Database"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/8.jpeg) le damos, seleccionamos un nombre para la base de datos y seleccionamos ["Create"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/9.jpeg)
 
