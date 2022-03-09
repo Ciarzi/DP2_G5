@@ -62,7 +62,7 @@ Con esto ya tenemos nuestra instancia de BD lista y funcionando.
 
    - Target type, seleccionaremos ["Pub/Sub"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/14.jpeg)
       
-   - Select a Cloud Pub/Sub topic, selecionaremos ["Create a Topic"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/15.jpeg). Ahí habrá que llenar el campo "Topic id"  y         una vez puesto el nombre, seleccionar ["Create Topic"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/16.jpeg)
+   - Select a Cloud Pub/Sub topic, selecionaremos ["Create a Topic"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/15.jpeg). Ahí habrá que llenar el campo "Topic id",     nosotros hemos puesto "datagen_trigger" y una vez puesto el nombre, seleccionar ["Create Topic"](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/16.jpeg)
    
    - Message body, escribiremos lo siguiente: [{"message":"hello"}](https://github.com/Ciarzi/DP2_G5/blob/main/Tutorial/17.jpeg)
         
