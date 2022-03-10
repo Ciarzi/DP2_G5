@@ -51,7 +51,7 @@
     </div>
     
     <div class="form-group">
-        <label> ¿A que humedad % te gustaría que se regase de forma automática?</label>
+        <label> ¿A qué humedad % te gustaría que se regase de forma automática?</label>
         <input type="text" id= "metroscuad" #humedad= "ngModel" pattern="^\d{1,2}$" [class.is-invalid]= "humedad.invalid && humedad.touched" class="form-control" name="humedad" [(ngModel)]="userModel.humedad">
         <small>Valor obligatorio. Asegúrese de poner solo números</small>
     </div>
