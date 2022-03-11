@@ -4,7 +4,7 @@
 El objetivo de este segundo Data Project es crear un producto IoT escalable, opensource y basado plenamente en cloud.
 
 <p align="center">
-   <img src="https://github.com/Ciarzi/DP2_G5/blob/main/Imagenes/Logo%20DP2.png?raw=true" alt="[YOUR_ALT]"/>
+   <img src="https://github.com/Ciarzi/DP2_G5/blob/main/Informaci%C3%B3n%20adicional/Logo%20DP2.png" alt="[YOUR_ALT]"/>
 </p>
 
 # ¿Qué es Letspray?
